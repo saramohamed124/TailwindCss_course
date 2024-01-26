@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="text-gray-700 font-body ">
+<body class="text-gray-700 font-body">
 
     <div><!-- content wrapper -->
         <div>
             <nav>
                 <div>
-                    <h1 class="font-bold uppercase p-4">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="/" class="text-green-500 sm:text-red-500 md:text-blue-500">food Sara</a>
                     </h1>
                 </div>
                 <ul>
-                    <li>
+                    <li class="text-gray-700 font-bold">
                         <a href="#">
                             <span class="font-bold">Home</span>
                         </a>
@@ -37,7 +37,7 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-8 py-6">
+        <main class="px-8 py-6 bg-gray-100">
             <div class="flex justify-end md:justify-between">
                 <a href="#" class="text-primary mr-2">Log in</a>
                 <a href="#" class="text-primary">Sign Up</a>
@@ -51,28 +51,33 @@
                 <h2 class="text-gray-900 text-6xl font-semibold">Recipes</h2>
                 <h3 class="text-2xl font-semibold">For Ninjas</h3>
             </header>
+            
             <div>
                 <h4 class="font-light mt-12 pb-2 border-b border-red-600">Latest Recipes</h4>
-                <div>
+                <div class="mt-8">
                     <!-- cards go here -->
-                    <div class="mt-8">
-                        <img src="../public/img/stew.jpg" alt="">
-                        <div>
-                            <span>5 Bean Chili stew</span>
-                            <span>Recipe by mario</span>
+                    <div class=" bg-white rounded overflow-hidden shadow relative">
+                        <img src="../public/img/stew.jpg" class="w-full object-cover h-32 sm:h-48" alt="">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chili stew</span>
+                            <span class="block text-gray-500 font-body">Recipe by mario</span>
+                        </div>
+                        <div class=" bg-secondary-100 text-secondary-200 text-xs font-semibold rounded-full absolute top-0 ml-2 mt-2">
+                            <span>25 mins</span>
                         </div>
                     </div>
+            
                 </div>
                 <h4 class="font-light">Most Pupular</h4>
                 <div class="mt-8">
                     <!-- cards go here -->
                 </div>
+            </div>
                 <div class="bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500 w-5 h-8"></div>
                 <div class="flex justify-center">
                     <div class="bg-secondary-100 text-secondary-200">Load more</div>
                 </div>
-            </div>
-
+           
         </main>
     </div>
 
