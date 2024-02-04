@@ -15,8 +15,10 @@ document.querySelector("#bar-menu").onclick = function(){
 // })
 
 document.querySelectorAll("#menu li a").forEach(e=>{
-    e.classList.remove("active_a")
     e.addEventListener('click',()=>{
+        document.querySelectorAll("#menu li a").forEach(a=>{
+            a.classList.remove("active_a");
+        })
         if(!e.classList.contains("active_a")){
         e.classList.add("active_a")
     }
