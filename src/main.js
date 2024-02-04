@@ -14,14 +14,15 @@ document.querySelector("#bar-menu").onclick = function(){
 //     }
 // })
 
-const list = document.querySelectorAll("li");
+const list = document.querySelectorAll("#menu li a");
 list.forEach(li => {
     li.addEventListener('click',()=>{
-        console.log(li)
+        li.classList.remove("border-primary")
         if(li.classList.contains("border-white")){
-            li.classList.add("bg-black")
-        }else{
-            li.classList.remove("border-primary")
-        }
+        li.classList.remove("border-white")
+        li.classList.add("border-primary")
+    }else{
+        li.classList.remove("border-primary")
+    }
     })
 });
