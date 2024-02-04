@@ -14,15 +14,11 @@ document.querySelector("#bar-menu").onclick = function(){
 //     }
 // })
 
-const list = document.querySelectorAll("#menu li a");
-list.forEach(li => {
-    li.addEventListener('click',()=>{
-        li.classList.remove("border-primary")
-        if(li.classList.contains("border-white")){
-        li.classList.remove("border-white")
-        li.classList.add("border-primary")
-    }else{
-        li.classList.remove("border-primary")
+document.querySelectorAll("#menu li a").forEach(e=>{
+    e.classList.remove("active_a")
+    e.addEventListener('click',()=>{
+        if(!e.classList.contains("active_a")){
+        e.classList.add("active_a")
     }
-    })
-});
+})
+})
